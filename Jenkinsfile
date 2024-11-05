@@ -2,8 +2,8 @@ pipeline {
     agent any
 
     tools{
-        jenkins-NodeJS-23.1
-        jenkins_docker
+        jenkins-npm "NodeJS 23.1.0"
+        jenkins_docker "latest"
 
     }
 
@@ -13,22 +13,19 @@ pipeline {
                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[credentialsId: 'jenkins-git', url: 'https://github.com/TodorovS/portfolio_website_pipe.git']])
             }
         }
-    }
-
-    stages {
-        stage('Install dependencies') {
+    
+    stage('Install dependencies') {
             steps {
                 sh 'node -v'
                 sh 'npm install'
             }
         }
-    }
-
-    stages {
-        stage('Run unit test') {
+    
+    stage('Run unit test') {
             steps {
                 sh 'npm test'
             }
         }
     }
+
 }
