@@ -1,10 +1,9 @@
 pipeline {
     agent any
 
-    tools{
+    tools {
         jenkins-npm "NodeJS 23.1.0"
         jenkins_docker "latest"
-
     }
 
     stages {
