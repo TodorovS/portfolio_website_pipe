@@ -1,0 +1,24 @@
+@use '@styles/utility' as *
+@use '@styles/variables' as *
+
+.articleDescription
+  @extend .center-text
+  @media screen and (max-width: 500px)
+    text-align: left
+
+.socialLinksTitle
+  text-align: center
+  font-size: inherit
+  font-weight: inherit
+  margin: 1rem 0
+
+.socialLinksContainer
+  width: 100%
+  gap: 0 1rem
+  @extend .flex-row
+  @extend .center-flex-item
+
+.link
+  transition: transform $interact-transition
+  &:hover
+    transform: scale(1.15)

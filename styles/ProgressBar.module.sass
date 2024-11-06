@@ -1,0 +1,34 @@
+@use '@styles/utility' as *
+@use '@styles/variables' as *
+
+.fillboxContainer
+  display: inline-flex
+  align-self: center
+  flex-direction: row
+  width: 100%
+  position: relative
+  background-color: transparent
+  border: none
+  color: inherit
+  font-size: 0.9rem
+  padding: 0.5rem 0
+  // cursor: pointer
+
+
+.fillboxBar
+  position: absolute
+  transform-origin: left
+  left: 0
+  top: 0
+  width: 0
+  height: 100%
+  transition: width $interact-transition
+  padding: 0
+  border-radius: 0
+  @extend .layer-bottom
+
+
+.fillboxContainer:hover
+  .fillboxBar
+    width: 100%
+
