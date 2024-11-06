@@ -1,40 +1,33 @@
 {
-  "name": "portfolio-website-template",
-  "version": "0.1.0",
   "private": true,
+  "name": "cara",
+  "description": "Playful and Colorful One-Page portfolio featuring Parallax effects and animations",
+  "version": "0.2.15",
+  "author": "LekoArts",
+  "license": "0BSD",
+  "starter-name": "gatsby-starter-portfolio-cara",
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "develop:cypress": "cross-env CYPRESS_SUPPORT=y yarn develop",
+    "build:cypress": "cross-env CYPRESS_SUPPORT=y yarn build",
+    "start": "gatsby develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
   },
   "dependencies": {
-    "@fontsource/archivo-black": "^4.5.9",
-    "@fontsource/ubuntu": "^4.5.11",
-    "@fortawesome/fontawesome-svg-core": "^6.2.0",
-    "@fortawesome/free-brands-svg-icons": "^6.2.0",
-    "@fortawesome/free-solid-svg-icons": "^6.2.0",
-    "@fortawesome/react-fontawesome": "^0.2.0",
-    "lodash.debounce": "^4.0.8",
-    "next": "12.3.0",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "react-responsive": "^9.0.0",
-    "react-switch": "^7.0.0",
-    "react-transition-group": "^4.4.5",
-    "sass": "^1.54.9"
+    "@lekoarts/gatsby-theme-cara": "^5.1.4",
+    "gatsby": "^5.13.6",
+    "gatsby-plugin-manifest": "^5.13.1",
+    "gatsby-plugin-webpack-statoscope": "^1.0.3",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   },
   "devDependencies": {
-    "@types/lodash.debounce": "^4.0.7",
-    "@types/node": "18.7.18",
-    "@types/react": "18.0.20",
-    "@types/react-dom": "18.0.6",
-    "@types/react-slick": "^0.23.10",
-    "@types/react-transition-group": "^4.4.5",
-    "cypress": "^11.0.0",
-    "eslint": "8.23.1",
-    "eslint-config-next": "12.3.0",
-    "sharp": "^0.31.2",
-    "typescript": "4.8.3"
+    "@types/node": "^20.14.10",
+    "@types/react": "^18.3.3",
+    "@types/react-dom": "^18.3.0",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.5.3"
   }
 }
