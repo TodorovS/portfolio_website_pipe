@@ -52,7 +52,7 @@ const Home = () => {
             />
           </h1>
           <h2>
-            Streamlining Workflows | Deploying Intelligent Systems | Building
+            Homelab Enthusiast | Devops Wannabe | Building
             Scalable Applications
           </h2>
           <Link to="/contact" className="flat-button">

@@ -130,11 +130,11 @@ const Contact = () => {
           </div>
         </div>
         <div className="info-map">
-          Sudip Banerjee
+          Stanislav Todorov
           <br />
-          Kolkata, <br />
-          West Bengal, <br />
-          India
+          Varna <br />
+          9000 <br />
+          Bulgaria
           <br />
         </div>
         <div className="map-wrap">
@@ -142,7 +142,7 @@ const Contact = () => {
             <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
             <Marker position={[22.56263, 88.36304]}>
               <Popup>
-                Sudip lives here, come over for a cup of coffee :{')'}
+                My location under the sun! :{')'}
               </Popup>
             </Marker>
           </MapContainer>

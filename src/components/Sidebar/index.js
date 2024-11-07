@@ -48,7 +48,7 @@ const Sidebar = () => {
         <ul>
           <li>
             <a
-              href="https://www.linkedin.com/in/banerjee-sudip/"
+              href=""
               target="_blank"
               rel="noreferrer"
             >
@@ -57,7 +57,7 @@ const Sidebar = () => {
           </li>
           <li>
             <a
-              href="https://github.com/metal-oopa"
+              href="https://github.com/TodorovS/portfolio_website_pipe"
               target="_blank"
               rel="noreferrer"
             >
@@ -66,7 +66,7 @@ const Sidebar = () => {
           </li>
           <li>
             <a
-              href="https://www.codechef.com/users/metal_oopa"
+              href=""
               target="_blank"
               rel="noreferrer"
             >
